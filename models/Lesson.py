@@ -1,9 +1,8 @@
 from odoo import models, fields, api
 
-class ECoursesLesson(models.Model):
+class Lesson(models.Model):
     _name = 'e_courses.lesson'
     _description = 'Course Lessons'
-
 
     title = fields.Text(string='Title', required=True)
     objective = fields.Text(string='Objective')

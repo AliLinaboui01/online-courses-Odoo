@@ -1,11 +1,10 @@
 from odoo import models, fields, api
 
-class ECoursesUser(models.Model):
+class User(models.Model):
     _name = 'e_courses.user'
     _description = 'Users'
-    
 
-     first_name = fields.Char(string='First Name', required=True)
+    first_name = fields.Char(string='First Name', required=True)
     last_name = fields.Char(string='Last Name', required=True)
     birth_date = fields.Date(string='Birth Date')
     email = fields.Char(string='Email', required=True)
@@ -39,10 +38,3 @@ class ECoursesUser(models.Model):
         self.write({'odoo_user_id': odoo_user.id})
 
         return odoo_user
-
-
-
-
-
-
-

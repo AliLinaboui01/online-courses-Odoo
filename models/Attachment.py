@@ -1,7 +1,6 @@
 from odoo import models, fields, api
 
-
-class ECoursesAttachment(models.Model):
+class Attachment(models.Model):
     _name = 'e_courses.attachment'
     _description = 'Lesson Attachments'
 

@@ -1,6 +1,6 @@
-from odoo import models, fields, api
+from odoo import models, fields
 
-class ECoursesCourseTag(models.Model):
+class CourseTag(models.Model):
     _name = 'e_courses.course.tag'
     _description = 'Course Tags'
 
